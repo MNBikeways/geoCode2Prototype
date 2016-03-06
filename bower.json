@@ -15,7 +15,8 @@
     "angular-touch": "^1.4.0",
     "angular-bootstrap": "~0.14.3",
     "leaflet": "~0.7.7",
-    "angular-apimock": "~0.3.3"
+    "angular-apimock": "~0.3.3",
+    "ionicons": "2.0.1"
   },
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.2.4",

@@ -36,6 +36,15 @@ angular.module('mnbikewaysMap', ['ionic', 'mnbikewaysMap.controllers'])
           templateUrl: 'templates/map.html'
         }
       }
+    })
+
+    .state('app.issue', {
+      url: '/issue',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/issue.html'
+        }
+      }
     });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/map');

@@ -1,0 +1,25 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Report Issue</h1>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="reportIssue()">
+      <div class="list">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Issue Name</span>
+          <input type="text" placeholder="Issue Name">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Issue Type</span>
+          <input type="text" placeholder="Issue Type">
+        </label>
+
+        <label id="image-upload" class="item item-input item-floating-label" >
+          <!--<span class="input-label">Upload Image</span>-->
+          <div id="camera-icon" class="ion-camera"></div>
+          <input type="button">
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
