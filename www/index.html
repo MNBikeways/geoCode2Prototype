@@ -4,8 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-
-
+    <link rel="stylesheet" href="/www/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/www/lib/leaflet/dist/leaflet.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+    <!--TODO minify all the things-->
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
 
@@ -14,28 +20,68 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+  </head>
 
+  <!--TODO rename app-->
+  <body ng-app="mnbikewaysMap" ng-controller="findLocationCtlr">
+    <ion-nav-view></ion-nav-view>
+
+    <!--<div class="container-fluid">-->
+      <!--<div class="row">-->
+        <!--<div id="header" class="col-md-12">-->
+          <!--<div id="hamburger"></div>-->
+          <!--<div id="menu">-->
+            <!--<ul>-->
+              <!--<li>FixIt Stations</li>-->
+              <!--<li>NiceRide Stations</li>-->
+              <!--<li>About</li>-->
+            <!--</ul>-->
+          <!--</div>-->
+          <!--<div id="logo"></div>-->
+          <!--<div id="headerTitle">MNBikeways</div>-->
+          <!--<div id="search">-->
+            <!--<img src="img/search.png" alt="Search Icon" ng-click="isSearchCollapsed=!isSearchCollapsed"-->
+                 <!--class="searchImage"/>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div id="map_wrapper" class="row" ng-controller="nicerideCtlr">-->
+        <!--<div id="map" full-screen-map class="col-md-12"></div>-->
+        <!--<div id="search_wrapper" uib-collapse="!isSearchCollapsed" ng-controller="searchCtlr" class="col-md-4 collapse">-->
+          <!--<search-box-directive></search-box-directive>-->
+        <!--</div>-->
+        <!--<div id="route_names" class="col-md-3"></div>-->
+      <!--</div>-->
+    <!--</div>-->
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/SearchResults/SearchController.js"></script>
+    <script src="js/SearchResults/SearchFactory.js"></script>
+    <script src="js/SearchResults/SearchDirective.js"></script>
+    <script src="js/SearchResults/MapMarkerFactory.js"></script>
+    <script src="js/Locate/locationController.js"></script>
+    <script src="js/Locate/locationDirective.js"></script>
+    <script src="js/NiceRideLocations/NiceRideFactory.js"></script>
+    <script src="js/NiceRideLocations/NiceRideController.js"></script>
 
-    <script src="www/lib/jquery/dist/jquery.js"></script>
-    <script src="www/lib/angular/angular.js"></script>
-    <script src="www/lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="www/lib/angular-animate/angular-animate.js"></script>
-    <script src="www/lib/angular-aria/angular-aria.js"></script>
-    <script src="www/lib/angular-cookies/angular-cookies.js"></script>
-    <script src="www/lib/angular-messages/angular-messages.js"></script>
-    <script src="www/lib/angular-resource/angular-resource.js"></script>
-    <script src="www/lib/angular-route/angular-route.js"></script>
-    <script src="www/lib/angular-sanitize/angular-sanitize.js"></script>
-    <script src="www/lib/angular-touch/angular-touch.js"></script>
-    <script src="www/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="www/lib/leaflet/dist/leaflet-src.js"></script>
-    <script src="www/lib/angular-apimock/dist/angular-apimock.js"></script>
-  </head>
+    <!--Unleash the KRAKEN-->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-aria/angular-aria.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+    <script src="lib/angular-messages/angular-messages.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="lib/angular-touch/angular-touch.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="lib/leaflet/dist/leaflet-src.js"></script>
+    <script src="lib/angular-apimock/dist/angular-apimock.js"></script>
 
-  <body ng-app="starter">
-    <ion-nav-view></ion-nav-view>
   </body>
 </html>
