@@ -1,0 +1,3 @@
+<input type="text" placeholder="Search Biketrails." ng-model="asyncSelected"
+                   uib-typeahead="address.name for address in searchBiketrails($viewValue)"
+                   typeahead-on-select="onSelect($item,$model,$label); asyncSelected='';" typeahead-popup-template-url="views/typeahead.html" class="form-control">
