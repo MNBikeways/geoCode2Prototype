@@ -6,7 +6,7 @@ angular.module('mnbikewaysMap').directive('fullScreenMap', ['$window', function(
               $scope.onResize = function() {
                 var header = document.getElementById('header');
                 var h = $window.innerHeight - header.clientHeight;
-                element.height(h);
+                element.height = h;
               }
               $scope.onResize();
 

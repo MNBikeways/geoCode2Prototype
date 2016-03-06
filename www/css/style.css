@@ -119,3 +119,7 @@ body {
 .dropdown-menu > li > a {
   white-space: pre-wrap;
 }
+
+#map {
+  height: 900px;
+}
