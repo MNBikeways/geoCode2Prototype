@@ -1,8 +1,13 @@
 <ion-view view-title="Map">
   <ion-content>
     <div class="container-fluid">
-        <div id="map"></div>
 
+      <div id="map_wrapper">
+      <div id="map"></div>
+        <div id="search_wrapper" ng-controller="searchCtlr">
+          <search-box-directive></search-box-directive>
+        </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>
