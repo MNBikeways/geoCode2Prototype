@@ -9,12 +9,11 @@ angular.module('mnbikewaysMap').factory('mnSearchFactory', ['$http', function($h
       var list_object = [];
       for (var i = 0; i < response.data.features.length; i++) {
         list_object.push({
-          'name': response.data.features[i].text,
+          'name': response.data.features[i].place_name,
           'lat': response.data.features[i].geometry.coordinates[1],
           'lon': response.data.features[i].geometry.coordinates[0]
         });
       }
-      console.log(list_object);
       return list_object;
   })
 }}}]);
