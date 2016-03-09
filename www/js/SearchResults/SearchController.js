@@ -14,7 +14,8 @@ angular.module('mnbikewaysMap').controller('searchCtlr', ['$scope', '$window', '
         $scope.selectedFromSearch.push($item);
         $scope.marker1 = L.marker([$scope.selectedFromSearch[0].lat, $scope.selectedFromSearch[0].lon]);
         $scope.markers.addLayer($scope.marker1);
-        addMarkersToMap.addtoMap($scope.marker1, $scope.markers.getBounds());
+        addMarkersToMap.addtoMap($scope.marker1);
+        $scope.marker1.bindPopup('<div>Route</div>').openPopup();
       }
     };
 

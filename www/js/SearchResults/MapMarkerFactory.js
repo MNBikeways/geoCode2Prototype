@@ -3,10 +3,10 @@
 
 angular.module('mnbikewaysMap').factory('addMarkersToMap', ['$window', function($window){
 
-  return {addtoMap: function(marker, bounds){
+  return {addtoMap: function(marker){
 
     marker.addTo($window.map);
-    $window.map.fitBounds(bounds.pad(.1));
+    $window.map.setView(marker.getLatLng(), 19)
   }}
 
 }]);

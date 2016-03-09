@@ -4,7 +4,8 @@ angular.module('mnbikewaysMap').factory('mnSearchFactory', ['$http', function($h
   return {searchBackend : function(val, latitude, longitude) {
     return $http.get('https://api.mapbox.com/geocoding/v5/mapbox.places/'+
       val+
-      '.json?access_token=pk.eyJ1IjoiYm95ZGpvaG5zb24iLCJhIjoiNTEyMWNjMTY2ZTBhNzAxNjEwMzE0ODhmMjdkNzAxZTUifQ.rXmBJmEXZZOyMS8uzeP4-A', {
+      '.json?proximity='+longitude+','+latitude+
+    '&cc=us&access_token=pk.eyJ1IjoiYm95ZGpvaG5zb24iLCJhIjoiNTEyMWNjMTY2ZTBhNzAxNjEwMzE0ODhmMjdkNzAxZTUifQ.rXmBJmEXZZOyMS8uzeP4-A', {
     }).then(function(response) {
       var list_object = [];
       for (var i = 0; i < response.data.features.length; i++) {
