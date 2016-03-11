@@ -135,7 +135,7 @@ body {
 }
 .popup-element {
   display: inline-block;
-  width: 45px;
+  width: 42px;
 }
 .popup-element.router {
   border: 1px solid black;
