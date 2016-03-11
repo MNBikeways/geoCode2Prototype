@@ -123,3 +123,25 @@ body {
 #map {
   height: 900px;
 }
+
+.leaflet-popup-content {
+  margin-left: 0;
+}
+
+.bicycle-popup {
+  background-color: #630062;
+  height: 25px;
+  width: 41px;
+}
+.popup-element {
+  display: inline-block;
+  width: 45px;
+}
+.popup-element.router {
+  border: 1px solid black;
+}
+
+.popup-element.name {
+  width: 200px;
+  margin-left:5px;
+}
